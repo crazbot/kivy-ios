@@ -5,7 +5,10 @@ import sh
 
 class FreetypeRecipe(Recipe):
     version = "2.5.5"
-    url = "http://download.savannah.gnu.org/releases/freetype/freetype-{version}.tar.bz2"
+#     url = "http://download.savannah.gnu.org/releases/freetype/freetype-{version}.tar.bz2"
+#     url = "https://downloads.sourceforge.net/project/freetype/freetype2/{version}/freetype-{version}.tar.bz2"
+#     url = "https://nchc.dl.sourceforge.net/project/freetype/freetype2/2.5.5/freetype-2.5.5.tar.bz2"
+    url = "https://nchc.dl.sourceforge.net/project/freetype/freetype2/{version}/freetype-{version}.tar.bz2"
     library = "objs/.libs/libfreetype.a"
     include_dir = ["include", ("builds/unix/ftconfig.h", "config/ftconfig.h")]
     include_per_arch = True
